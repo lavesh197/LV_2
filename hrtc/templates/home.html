@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+<html>
+
+<head>
+  <title>Ploter.com</title>
+
+<style>
+{% load staticfiles %}
+html
+{ height: 100%;}
+
+*
+{ margin: 0;
+  padding: 0;}
+
+h1
+{ font: normal 175% 'century gothic', arial, sans-serif;
+  color: #43423F;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;}
+
+h2
+{ font: normal 175% 'century gothic', arial, sans-serif;
+  color: #000;}
+
+
+
+ a:hover
+{ outline: none;
+  text-decoration: underline;
+  color: #000;}
+
+
+
+#main, #logo, #menubar, #site_content, #footer
+{ margin-left: auto;
+  margin-right: auto;}
+
+#header
+{ background: #1D1D1D url({%static "images/pic.jpg" %}) repeat;
+  height: 240px;}
+
+
+
+#logo_text
+{ position: absolute;
+  top: 20px;
+  left: 0;
+  width: 825px;
+  position: relative;
+  height: 168px;}
+
+#logo_text h1, #logo_text h2
+{ font: normal 300% 'century gothic', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;}
+
+ #logo_text h1 a, #logo_text h1 a:hover
+{ padding: 22px 0 0 0;
+  color: #FFF;
+  letter-spacing: 0.1em;
+  text-decoration: none;}
+
+#logo_text h1 a .logo_colour
+{ color: #000;}
+
+#logo_text h2
+{ font-size: 100%;
+  padding: 4px 0 0 0;
+  color: #DDD;}
+
+#menubar
+{ width: 900px;
+  height: 72px;
+  padding: 0;
+  background: url({%static "images/transparent_light.png"%}) repeat;}
+
+ul#menu, ul#menu li
+{ float: left;
+  margin: 0;
+  padding: 0;}
+
+ul#menu li
+{ list-style: none;}
+
+ul#menu li a
+{ letter-spacing: 0.1em;
+  font: normal 100% arial, sans-serif;
+  display: block;
+  float: left;
+  height: 37px;
+  padding: 29px 26px 6px 26px;
+  text-align: center;
+  color:#FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  background:url({%static "images/transparent.png" %});}
+
+ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
+{ color:#000 ;
+  background: url({%static "images/transparent_light.png"%}) repeat;}
+
+
+</style>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+        <div id="logo_text">
+          <h1><a href="slides" target="f1">Ploter.com</a></h1>
+          <h2>Lets plot our way.</h2>
+        </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li ><a href="slides" target="f1">Home</a></li>
+          <li ><a href="search" target="f1">Search Bus</a></li>
+          <li ><a href="details" target="f1">Bus Details</a></li>
+          <li ><a href="track" target="f1">Track Live</a></li>
+          <li ><a href="contact" target="f1">Contact Us</a></li>
+          <li ><a href="https://www.localguy.in/" target="_blank">Plan Trip</a></li>
+        </ul>
+      </div>
+    </div>
+
+      </div>
+
+    </div>
+
+</body>
+</html>

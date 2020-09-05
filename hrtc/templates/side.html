@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<html>
+<head>
+  <style>
+    td a
+    { letter-spacing: 0.1em;
+      font: normal 100% arial, sans-serif;
+      display: block;
+
+      height: 37px;
+      padding: 29px 26px 6px 26px;
+
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      background-color:grey;}
+
+ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
+    { color:cyan;
+    }
+    td:hover
+    {
+      background-color:black;
+    }
+ body{
+   background-color:orange;
+ }
+  </style>
+</head>
+<body >
+<div id="menubar" <style="background-color:black;">
+  <ul style="list-style:none; display: block;" id="menu">
+    <table>
+    <tr> <td><li ><a href="slides" target="f1">Home</a></li></td></tr>
+    <tr><td><li ><a href="https://www.redbus.in/?gclid=EAIaIQobChMI2-7jusLq5QIV2Q0rCh13DAdkEAAYASAAEgJ3tPD_BwE" target="_blank">Bus Bookings</a></li></td></tr>
+    <tr><td><li ><a href="https://www.localguy.in/" target="_blank">Plan Trip</a></li></td></tr>
+    <tr> <td><li ><a href="contact" target="f1">Developers</a></li></td></tr>
+  </ul>
+</div>
+</body>
+</html>

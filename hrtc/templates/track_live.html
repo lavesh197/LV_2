@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<html>
+
+<head>
+  <title>Track Live</title>
+
+
+</head>
+
+<body background ="{%static "images/background.png" %}">
+
+ <h1 align="center"  style="font-family: Script MT Bold;font-size:60px">TRACK LIVE</h1>
+ <h2 align="center"><div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"height":500,"width":1500,"zoom":12,"queryString":"Shimla, Himachal Pradesh, India","place_id":"ChIJZ25d4-N4BTkRt1Sf__Z_fh8","satellite":false,"centerCoord":[31.078228251222363,77.15902125000002],"cid":"0x1f7e7ff6ff9f54b7","cityUrl":"/india/chhota-simla-155704","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"113552"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=113552';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/map-embed?embed_id=113552">1map.com</a></div>
+    </h2>
+</body>
+
+</html>
